@@ -35,6 +35,12 @@
 						<i class="fas fa-info-circle"></i><span>Lista de Pedidos</span>
 					</a>
 				</li>
+
+				<li class="item">
+					<a href="about" class="menu-btn">
+						<i class="fas fa-info-circle"></i><span>Acerca de</span>
+					</a>
+				</li>
  
 			</div>
 		</div>

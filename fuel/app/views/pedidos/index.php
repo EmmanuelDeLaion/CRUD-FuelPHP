@@ -1,13 +1,13 @@
-<h1>Pedidos Registrados</h1>
+<h1 class="display-4">Pedidos Registrados</h1>
 
 			<div class="col-12">
 				<div class="d-flex">
 					<div class="p-2">
 					
 					</div>
-					<div class="ml-auto p-2">
+					<!-- <div class="ml-auto p-2">
 						<button class="btn btn-outline-info "> <i class="fas fa-file-download"></i> Descargar Pdf</button>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -60,8 +60,8 @@
                             <td> <?= $pedido->referencias; ?> </td>
                             <td> <?= $pedido->telefono; ?> </td>
                             <td class="d-flex ">
-                            <button class="btn btn-info mr-3"> <i class="fas fa-times-circle"></i> </button>
-                            <button class="btn btn-info mr-3"> <i class="fas fa-trash"></i> </button>
+                            <a href="edit/<?=$pedido->id; ?>"  class="btn btn-info mr-3"> <i class="fas fa-edit"></i> </a>
+                            <a href="delete/<?=$pedido->id; ?>"   class="btn btn-info mr-3"> <i class="fas fa-trash"></i> </a>
                             </td>
 						</tr>
 <?php endforeach; ?>

@@ -1,12 +1,14 @@
-<h1 class="display-4">Registrar pedido</h1>
+<h1 class="display-4">Editar información</h1>
 
-<?= Form::open('/pedidos/add');  ?>
+<?= Form::open('/pedidos/edit/'.$pedido->id);  ?>
 
 
 <div class="container">
 <div class="row">
 <div class="col-2"></div>
 <div class="col-8">
+
+<input type="hidden" name="pedido_id" value=" <?=$pedido->id;?> " >
 
 <h5 class="text-info mt-5"> <span> <i class="fas fa-user"></i> </span> Información Personal</h5>
 
@@ -130,7 +132,7 @@
 
 
 <div class="container">
-<?= Form::submit('send'); ?>
+<?= Form::submit('save'); ?>
 </div>
 
 </div>
@@ -142,4 +144,4 @@
 
 
 
-<?= Form::close('/pedidos/add');  ?>
+<?= Form::close('/pedidos/edit/'.$pedido->id);  ?>
