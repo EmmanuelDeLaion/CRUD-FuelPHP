@@ -1,8 +1,4 @@
-
-			<div class="col-12 mt-2">
-				<h3 class="title-info">Pedidos Registrados</h3>
-				<hr>
-			</div>
+<h1>Pedidos Registrados</h1>
 
 			<div class="col-12">
 				<div class="d-flex">
@@ -43,7 +39,7 @@
 							</tr>
 						</thead>
 
-<!-- <?php foreach($pedidos as $pedido): ?> -->
+ <?php foreach($pedidos as $pedido): ?>
 						<tr class="table" >
 							<td> <?= $pedido->nombre; ?> </td>
 							<td> <?= $pedido->apellido_paterno; ?> </td>
