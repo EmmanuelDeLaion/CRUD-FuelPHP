@@ -28,9 +28,11 @@ class Controller_Pedidos extends Controller_Template{
             $pedido->estado = Input::post('estado');
             $pedido->ciudad = Input::post('ciudad');
             $pedido->calle = Input::post('calle');
-            $pedido->numero_interio = Input::post('numero_interio');
+            $pedido->numero_interior = Input::post('numero_interior');
             $pedido->numero_exterior = Input::post('numero_exterior');
             $pedido->referencias = Input::post('referencias');
+            $pedido->telefono = Input::post('telefono');
+
             $pedido->save();
             Response::redirect('/pedidos/index');
         }
@@ -60,9 +62,11 @@ class Controller_Pedidos extends Controller_Template{
             $pedido->estado = Input::post('estado');
             $pedido->ciudad = Input::post('ciudad');
             $pedido->calle = Input::post('calle');
-            $pedido->numero_interio = Input::post('numero_interio');
+            $pedido->numero_interior = Input::post('numero_interior');
             $pedido->numero_exterior = Input::post('numero_exterior');
             $pedido->referencias = Input::post('referencias');
+            $pedido->telefono = Input::post('telefono');
+
             $pedido->save();
             Response::redirect('/pedidos/index');
         }
