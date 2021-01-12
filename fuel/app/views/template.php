@@ -25,7 +25,7 @@
 					<p class="titulo-bienvenida mt-5">Pedidos Fuel PHP</p>
 				</div>
 				<li class="item">
-					<a href="about" class="menu-btn">
+					<a href="add" class="menu-btn">
 						<i class="fas fa-desktop"></i><span>Agregar Pedido</span>
 					</a>
 				</li>
